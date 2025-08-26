@@ -940,19 +940,20 @@
         <div class="info-text">パパ</div>
         <input type="text" id="papan" placeholder="入力してください">
 
-        <div class="info-text">料金表をお送りしますのでご参照ください。</div>
+        <div class="info-text">
+            料金表はこちら
+                        <a href="https://suzu-photo.com/wp-content/uploads/2025/04/%E6%96%99%E9%87%91%E8%A1%A82025.jpg"
+                target="_blank" rel="noopener noreferrer">
+                <br>＞＞お支度料金表＜＜
+            </a>
+            </a>
+        </div>
 
         <div class="labelhidarizurasi">ご希望の支度場所</div>
         <div class="info-text">※お参り同行プランの方は支度場所はご自宅になります。<br>
             支度撮影をご希望の方のみご自宅かスタジオかお選び頂けます。<br>
             スタジオ撮影の方は支度場所はスタジオになります。</div>
         <input type="text" id="Otonaisyoubangou" placeholder="入力してください">
-
-        <div class="labelhidarizurasi">撮影同行のご希望の有無</div>
-        <div class="AnshinPack-buttons">
-            <button type="button" onclick="selectAnshinPack(this)">有り</button>
-            <button type="button" onclick="selectAnshinPack(this)">無し</button>
-        </div>
 
         <div class="labelhidarizurasi">ご質問/ご相談</div>
         <textarea id="message" rows="4" placeholder="メッセージを入力してください"></textarea>
@@ -1201,7 +1202,7 @@
 
             liff.sendMessages([{
                 type: 'text',
-                text: `【予約フォーム】\n≪お支度(ヘアメイク)≫\n\n｟お子様①｠\n・${formData.okosamaiti}\n\n｟お子様②｠\n・${formData.okosamani}\n\n｟ママ｠\n・${formData.maman}\n\n｟パパ｠\n・${formData.papan}\n\n｟ご希望の支度場所｠\n・${formData.Otonaisyoubangou}\n\n｟撮影同行のご希望の有無｠\n・${formData.AnshinPackCount}\n\n｟ご質問/ご相談｠\n・${formData.message}`
+                text: `【予約フォーム】\n≪お支度(ヘアメイク)≫\n\n｟お子様①｠\n・${formData.okosamaiti}\n\n｟お子様②｠\n・${formData.okosamani}\n\n｟ママ｠\n・${formData.maman}\n\n｟パパ｠\n・${formData.papan}\n\n｟ご希望の支度場所｠\n・${formData.Otonaisyoubangou}\n\n｟ご質問/ご相談｠\n・${formData.message}`
             }]).then(() => {
                 alert('お問合せありがとうございます。追って担当者から返信をさせて頂きます。');
                 liff.closeWindow();
