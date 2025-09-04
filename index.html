@@ -1202,7 +1202,7 @@
 
             liff.sendMessages([{
                 type: 'text',
-                text: `【予約フォーム】\n【お支度(ヘアメイク)】\n\n｟お子様①｠\n・${formData.okosamaiti}\n\n｟お子様②｠\n・${formData.okosamani}\n\n｟ママ｠\n・${formData.maman}\n\n｟パパ｠\n・${formData.papan}\n\n｟ご希望の支度場所｠\n・${formData.Otonaisyoubangou}\n\n｟ご質問/ご相談｠\n・${formData.message}`
+                text: `【お支度(ヘアメイク)】\n｟お子様①｠\n・${formData.okosamaiti}\n\n｟お子様②｠\n・${formData.okosamani}\n\n｟ママ｠\n・${formData.maman}\n\n｟パパ｠\n・${formData.papan}\n\n｟ご希望の支度場所｠\n・${formData.Otonaisyoubangou}\n\n｟ご質問/ご相談｠\n・${formData.message}`
             }]).then(() => {
                 alert('お問合せありがとうございます。追って担当者から返信をさせて頂きます。');
                 liff.closeWindow();
